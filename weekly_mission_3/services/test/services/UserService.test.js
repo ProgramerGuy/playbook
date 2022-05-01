@@ -33,8 +33,8 @@ describe("Test for UserService", () => {
         const user3 = UserService.create(1,"pedroBel", "Pedro")
         const usernames = UserService.getAllUsernames([user1, user2, user3])
         
-        expect(usernames).toCaontain("raulGomez")
-        expect(usernames).toCaontain("mariaB")
-        expect(usernames).toCaontain("pedroBel")
+        expect(usernames).toContain("raulGomez")
+        expect(usernames).toContain("mariaB")
+        expect(usernames).toContain("pedroBel")
     })
 })
