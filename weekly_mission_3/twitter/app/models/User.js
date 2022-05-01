@@ -4,8 +4,8 @@ class User {
         this.username = username;
         this.name = name;
         this.bio = bio;
-        this.dataCreated = dateCreated;
-        this.lastUpdated = lastUpdated;
+        this.dataCreated = new Date();
+        this.lastUpdated = new Date();
     }
 }
 
