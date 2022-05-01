@@ -12,6 +12,10 @@ class UserService {
         }
         return data;
     }
+
+    static updateUserUsername(user, username) {
+        user.username = username
+    }
 }
 
 module.exports = UserService
