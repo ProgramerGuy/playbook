@@ -32,7 +32,7 @@ describe("Test for UserService", () => {
         const user2 = UserService.create(1,"mariaB", "Maria")
         const user3 = UserService.create(1,"pedroBel", "Pedro")
         const usernames = UserService.getAllUsernames([user1, user2, user3])
-
+        
         expect(usernames).toCaontain("raulGomez")
         expect(usernames).toCaontain("mariaB")
         expect(usernames).toCaontain("pedroBel")
